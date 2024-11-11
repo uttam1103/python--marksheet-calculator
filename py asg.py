@@ -46,7 +46,7 @@ def display_marksheet(student_name, father_name, school_name, board_name, marks 
     print(f"Father's Name     : {father_name}")
     print(f"School Name       : {school_name}")
     print(f"Board Name        : {board_name}")
-    print(f"session           : {board_session}")
+    print(f"session           : {session}")
     print("\nSubject-wise Marks:")
     for subject, mark in marks.items():
         print(f"{subject:18} : {mark}")
@@ -64,7 +64,7 @@ def main():
     father_name = input("Enter the father's name: ")
     school_name = input("Enter the school name: ")
     board_name = input("Enter the board name: ")
-    session_name = input("Enter the session: ")
+    session = input("Enter the session: ")
 
     # Input marks for 5 subjects
     marks = {}
